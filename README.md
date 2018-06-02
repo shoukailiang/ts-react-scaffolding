@@ -3,4 +3,6 @@
 
 # 基于微软的react脚手架
 - 一个基本的redux的demo写法
+- 异步使用了中间件redux-thunk
+- 可以使用redux 谷歌插件查看数据变化
 

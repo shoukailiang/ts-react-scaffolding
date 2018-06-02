@@ -3,7 +3,9 @@ import * as actions from '../actions/';
 import { connect, Dispatch } from 'react-redux';
 import { StoreState } from '../types/index';
 
-export function mapStateToProps({ enthusiasmLevel, languageName }: StoreState) {
+export function mapStateToProps(Globalstate: any) {
+  const num: StoreState = Globalstate.num;
+  const { enthusiasmLevel, languageName } = num;
   return {
     enthusiasmLevel,
     name: languageName,
