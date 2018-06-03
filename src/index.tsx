@@ -1,13 +1,13 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import Hello from './containers/Hello';
 import { Provider } from 'react-redux';
 import { EnthusiasmAction } from './actions/index';
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import { enthusiasm } from './reducers/index';
 import { StoreState } from './types/index';
+import App from './App';
 import './index.css';
 
 const middleware = applyMiddleware(thunk as any);
@@ -21,7 +21,7 @@ const store = createStore<StoreState, EnthusiasmAction, any, any>(reducers as an
 
 ReactDOM.render(
   <Provider store={store}>
-    <Hello />
+    <App />
   </Provider>,
   document.getElementById('root') as HTMLElement,
 );

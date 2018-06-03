@@ -12,12 +12,7 @@
   },
   "rules": {
     "ordered-imports": false,
-    "align": [
-      true,
-      "parameters",
-      "arguments",
-      "statements"
-    ],
+    "align": false,
     "ban": [
       true,
       [
@@ -49,6 +44,8 @@
       true,
       "variables-before-functions"
     ],
+    "jsx-no-bind": false,
+    "only-arrow-functions": false,
     "no-any": false,
     "no-arg": true,
     "no-bitwise": false,
